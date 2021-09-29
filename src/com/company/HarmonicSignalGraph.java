@@ -16,15 +16,11 @@ import java.util.stream.Stream;
 
 public class HarmonicSignalGraph {
 
-   private List<Double> list = new ArrayList();
-
     public ChartPanel drawGraph(double frequency) {
 
         XYSeries series = new XYSeries("sign(sin(2*Pi*frequency*t)) + 1");
 
-        //region Description
-            //Через сумму синусов
-        //endregion
+//region Через сумму синусов
 
 //        int f1 = (int) frequency;
 //        int fd = 1000;
@@ -52,6 +48,7 @@ public class HarmonicSignalGraph {
 //                series.add(i, xSum);
 //            }
 //        }
+//endregion
 
         double f = 0;
         for (float i = 0; i < 1; i += 0.0001) {
@@ -61,7 +58,7 @@ public class HarmonicSignalGraph {
 
         XYDataset xyDataset = new XYSeriesCollection(series);
         JFreeChart chart = ChartFactory
-                .createXYLineChart("График импульсного сигнала (однополярный меандр)" + "\n Частота: " + frequency + " Гц", "t", "A",
+                .createXYLineChart("График импульсного сигнала (однополярный меандр)" + "\n Частота: " + frequency + " Гц", "t", "A (U)",
                         xyDataset,
                         PlotOrientation.VERTICAL,
                         true, true, true);

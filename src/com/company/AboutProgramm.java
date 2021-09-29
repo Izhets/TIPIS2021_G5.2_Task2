@@ -11,7 +11,7 @@ public class AboutProgramm extends JDialog {
     private JTextPane textPane1;
 
     public AboutProgramm() {
-        this.setTitle("О программе / ТИПИС2021 | Задача 1");
+        this.setTitle("О программе / ТИПИС2021 | Задача 2");
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
@@ -29,7 +29,7 @@ public class AboutProgramm extends JDialog {
             }
         });
 
-        textPane1.setText("Программа для демонстрации графиков гармонического сигнала и его спектра." +
+        textPane1.setText("Программа для демонстрации графиков импульсного сигнала (однополярного меандра) и их спектров." +
                 " Для использования сначала нужно выбрать частоту сигнала, после чего нажать на кнопку " +
                 " \"Построить функцию\" или \"Построить спектр\"");
     }

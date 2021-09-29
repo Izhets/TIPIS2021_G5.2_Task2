@@ -16,7 +16,7 @@ public class Window extends JFrame {
 
     public Window() throws NullPointerException, IOException {
         frequencySpinner.setValue(1);
-        this.setTitle("ТИПИС2021 | Задача 1 | Хныкин Д.Е. | Группа 5.2");
+        this.setTitle("ТИПИС2021 | Задача 2 | Хныкин Д.Е. | Группа 5.2");
         this.setContentPane(mainPanel);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
